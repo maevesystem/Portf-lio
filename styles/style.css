@@ -74,7 +74,7 @@ body {
 .Apresentacao {
     padding: 8% 15%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     position: relative;
 
