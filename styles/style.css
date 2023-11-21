@@ -13,11 +13,6 @@
     margin: 0;
     padding: 0;
 }
-img {
-    position: sticky;
-    top: 0;
-    z-index: -10;
-}
 body {
     box-sizing: border-box;
     background-color: var(--cor-primaria);
@@ -31,7 +26,7 @@ body {
 .AbaSiteTexto {
     color: rgb(0, 0, 0);
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     display: flex;
     gap: 80px;
     font-weight: 600px;
@@ -48,7 +43,7 @@ body {
     border: 5px solid var(--cor-secundaria);
     text-align: center;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 1.25REM;
     padding: 5px 20px;
     transition: all 0.3s ease-in-out;
 }
@@ -76,28 +71,28 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    position: relative;
+    gap: 82px;
 
    
 }
 .ApresentacaoConteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
   
 }
 .ConteudoTitulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: 'Krona One', sans-serif;
     
 }
 .paragrafo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif; }
 
 .ConteudoTituloTexto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
 }
     
@@ -113,7 +108,7 @@ body {
 .subtitulorede {
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .botoeslink {
@@ -122,9 +117,10 @@ body {
     gap: 10px;
     border: 5px solid var(--cor-terciaria);
     text-align: center;
+    width: 50%;
     border-radius: 50px;
     box-shadow: 10px 20px rgb(88, 183, 183);
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 10px 15px;
     text-decoration: none;
     font-weight: 600;
@@ -138,6 +134,14 @@ body {
     padding: 15px 20px;
 }
 
+.ApresentacaoImagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
 .Desenvolvido {
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
@@ -145,7 +149,29 @@ body {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 400px;
-    font-size: 24px;
+    font-size: 1.5rem;
     width: 100%;
 }
 
+@media (max-width: 768px) {
+.AbaSite {
+        padding: 10% 0% 0% 15%;
+    }
+.Apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+} 
+.ApresentacaoConteudo {
+    width: auto;
+    margin: auto;
+}
+.AbaSiteTexto {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+};
